@@ -141,10 +141,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[
-        InlineKeyboardButton('Group', url='https://t.me/joinchat/ehFX99SheBI3ZGZl'),
-        InlineKeyboardButton('Channel', url='https://t.me/CTv_All')
-    ]]
+                    [[InlineKeyboardButton(text="Channel", url="https://t.me/CTv_All"),  InlineKeyboardButton(text="Group", url="https://t.me/joinchat/ehFX99SheBI3ZGZl") ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
