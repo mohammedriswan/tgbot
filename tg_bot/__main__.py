@@ -17,6 +17,10 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
+
+START_IMG = "https://telegra.ph/file/5aa170c6e25b6d6d5fed5.jpg"
+
+
 PM_START_TEXT = """
 
 ഹായ് {}!!
