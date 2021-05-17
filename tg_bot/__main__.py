@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
-START_IMG = ""
+START_IMG = "https://telegra.ph/file/5aa170c6e25b6d6d5fed5.jpg"
 
 
 PM_START_TEXT = """
@@ -141,8 +141,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+
+            update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="Channel", url="https://t.me/CTv_All"),  InlineKeyboardButton(text="Group", url="https://t.me/joinchat/ehFX99SheBI3ZGZl") ]]))
