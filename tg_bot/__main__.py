@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
-START_IMG = "https://telegra.ph/file/5aa170c6e25b6d6d5fed5.jpg"
+START_IMG = "https://telegra.ph/file/65b361087ba375be7c771.jpg"
 
 
 PM_START_TEXT = """
